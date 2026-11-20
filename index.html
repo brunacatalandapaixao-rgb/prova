@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Comunitária</title>
+      <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+ <header>
+    <h1>Biblioteca Comunitária</h1>
+    <section id="noticias">
+        <!-- Imagem Informativa -->
+<img src="logo.png" alt="uma pilha de livros abertos.">
+<!-- Imagem Decorativa -->
+<img src="linha.png" alt="">
+ <h2>Empréstimo de Livros</h2>
+ <p>Reserve seu livro favorito gratuitamente.</p>
+</section>
+<form action="salvar.php" method="POST">
+<label for="nome-usuario">Nome Completo:</label>
+<input type="text" id="nome-usuario">
+<label for="email-user">E-mail de Contato:</label>
+<input type="email" id="email-user" required>
+<fieldset>
+  <legend>Tipo de retirada:</legend>
+  <input type="checkbox" id="op-Retirar no balcão" name="interesses" value="Retirar no balcão">
+  <label for="op-Retirar no balcão">Retirar no balcão</label><br>
+<input type="checkbox" id="op-Entrega em casa" name="interesses" value="Entrega em casa">
+  <label for="op-Entrega em casa">Entrega em casa</label><br>
+  </fieldset>
+
+  <fieldset>
+<legend>Gêneros Favoritos:</legend>
+
+  <input type="radio" id="Ficção" name="tipo-Ficção" value="Ficção">
+  <label for="Ficção">Ficção</label><br>
+
+  <input type="radio" id="Tecnologia" name="tipo-Tecnologia" value="Tecnologia">
+  <label for="Tecnologia">Tecnologia</label>
+</fieldset>
+<button type="submit">Confirmar Reserva" com aria</button>
+</form>
+<footer> 
+<p>Projeto Biblioteca - 2026.</p> 
+</footer> 
+
+ </header>   
+</body>
+</html>
